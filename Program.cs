@@ -1,4 +1,4 @@
-using KCIAOGS24.NET.AppData;
+using KCIAOGS24.NET.Infraestructure.Data.AppData;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

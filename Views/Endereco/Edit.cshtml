@@ -1,0 +1,68 @@
+﻿@model KCIAOGS24.NET.Application.Dtos.Edits.EnderecoEditDto
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>Endereco</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="id" />
+            <div class="form-group">
+                <label asp-for="tipoResidencial" class="control-label"></label>
+                <input asp-for="tipoResidencial" class="form-control" />
+                <span asp-validation-for="tipoResidencial" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="nome" class="control-label"></label>
+                <input asp-for="nome" class="form-control" />
+                <span asp-validation-for="nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="cep" class="control-label"></label>
+                <input asp-for="cep" class="form-control" />
+                <span asp-validation-for="cep" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="tarifa" class="control-label"></label>
+                <input asp-for="tarifa" class="form-control" />
+                <span asp-validation-for="tarifa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="gastoMensal" class="control-label"></label>
+                <input asp-for="gastoMensal" class="form-control" />
+                <span asp-validation-for="gastoMensal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="economia" class="control-label"></label>
+                <input asp-for="economia" class="form-control" />
+                <span asp-validation-for="economia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="fk_usuario" class="control-label"></label>
+                <input asp-for="fk_usuario" class="form-control" />
+                <span asp-validation-for="fk_usuario" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

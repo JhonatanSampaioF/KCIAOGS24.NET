@@ -1,0 +1,74 @@
+﻿@model IEnumerable<KCIAOGS24.NET.Application.Dtos.Edits.EnderecoEditDto>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Endereco</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.tipoResidencial)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cep)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tarifa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.gastoMensal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.economia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fk_usuario)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.tipoResidencial)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.cep)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.tarifa)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.gastoMensal)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.economia)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.fk_usuario)
+                </td>
+
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

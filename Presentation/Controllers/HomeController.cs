@@ -2,7 +2,7 @@ using KCIAOGS24.NET.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace KCIAOGS24.NET.Controllers
+namespace KCIAOGS24.NET.Presentation.Controllers
 {
     public class HomeController : Controller
     {
