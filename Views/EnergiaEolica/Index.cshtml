@@ -14,19 +14,19 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.)
+                @Html.DisplayNameFor(model => model.potencialNominal)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.email)
+                @Html.DisplayNameFor(model => model.alturaTorre)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.email)
+                @Html.DisplayNameFor(model => model.diametroRotor)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.email)
+                @Html.DisplayNameFor(model => model.energiaEstimadaGerada)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.email)
+                @Html.DisplayNameFor(model => model.fk_endereco)
             </th>
 
             <th></th>
@@ -37,10 +37,19 @@
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.nome)
+                    @Html.DisplayFor(modelItem => item.potencialNominal)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.email)
+                    @Html.DisplayFor(modelItem => item.alturaTorre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.diametroRotor)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.energiaEstimadaGerada)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.fk_endereco)
                 </td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |

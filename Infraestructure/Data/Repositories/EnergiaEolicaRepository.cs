@@ -2,7 +2,7 @@
 using KCIAOGS24.NET.Domain.Interfaces;
 using KCIAOGS24.NET.Domain.Entities;
 
-namespace KCIAO.API.MVC.Infraestructure.Data.Repositories
+namespace KCIAOGS24.NET.Infraestructure.Data.Repositories
 {
     public class EnergiaEolicaRepository : IEnergiaEolicaRepository
     {

@@ -3,7 +3,7 @@ using KCIAOGS24.NET.Application.Dtos.Create;
 using KCIAOGS24.NET.Application.Dtos.Edits;
 using Microsoft.AspNetCore.Mvc;
 
-namespace KCIAO.API.MVC.Presentation.Controllers
+namespace KCIAOGS24.NET.Presentation.Controllers
 {
     public class EnergiaSolarController : Controller
     {

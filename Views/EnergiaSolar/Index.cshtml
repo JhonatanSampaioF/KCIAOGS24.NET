@@ -1,11 +1,11 @@
-﻿@model IEnumerable<KCIAOGS24.NET.Application.Dtos.Edits.UsuarioEditDto>
+﻿@model IEnumerable<KCIAOGS24.NET.Application.Dtos.Edits.EnergiaSolarEditDto>
 
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Usuario</h1>
+<h1>Energia Solar</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -14,11 +14,18 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.nome)
+                @Html.DisplayNameFor(model => model.areaPlaca)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.email)
+                @Html.DisplayNameFor(model => model.irradiacaoSolar)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.energiaEstimadaGerada)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fk_endereco)
+            </th>
+
             <th></th>
         </tr>
     </thead>
@@ -27,11 +34,18 @@
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.nome)
+                    @Html.DisplayFor(modelItem => item.areaPlaca)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.email)
+                    @Html.DisplayFor(modelItem => item.irradiacaoSolar)
                 </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.energiaEstimadaGerada)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.fk_endereco)
+                </td>
+
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
                     <a asp-action="Details" asp-route-id="@item.id">Details</a> |
