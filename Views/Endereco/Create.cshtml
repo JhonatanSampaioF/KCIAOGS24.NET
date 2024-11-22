@@ -1,4 +1,4 @@
-﻿@model KCIAOGS24.NET.Application.Dtos.Create
+﻿@model KCIAOGS24.NET.Application.Dtos.Create.EnderecoDto
 
 @{
     ViewData["Title"] = "Create";
@@ -14,15 +14,41 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
+                <label asp-for="tipoResidencial" class="control-label"></label>
+                <input asp-for="tipoResidencial" class="form-control" />
+                <span asp-validation-for="tipoResidencial" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="nome" class="control-label"></label>
                 <input asp-for="nome" class="form-control" />
                 <span asp-validation-for="nome" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="email" class="control-label"></label>
-                <input asp-for="email" class="form-control" />
-                <span asp-validation-for="email" class="text-danger"></span>
+                <label asp-for="cep" class="control-label"></label>
+                <input asp-for="cep" class="form-control" />
+                <span asp-validation-for="cep" class="text-danger"></span>
             </div>
+            <div class="form-group">
+                <label asp-for="tarifa" class="control-label"></label>
+                <input asp-for="tarifa" class="form-control" />
+                <span asp-validation-for="tarifa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="gastoMensal" class="control-label"></label>
+                <input asp-for="gastoMensal" class="form-control" />
+                <span asp-validation-for="gastoMensal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="economia" class="control-label"></label>
+                <input asp-for="economia" class="form-control" />
+                <span asp-validation-for="economia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="fk_usuario" class="control-label"></label>
+                <input asp-for="fk_usuario" class="form-control" />
+                <span asp-validation-for="fk_usuario" class="text-danger"></span>
+            </div>
+
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>

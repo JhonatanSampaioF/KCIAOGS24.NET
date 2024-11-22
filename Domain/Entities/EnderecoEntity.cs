@@ -12,21 +12,27 @@ namespace KCIAOGS24.NET.Domain.Entities
         [DisplayName("Id")]
         public int id { get; set; }
 
+        [Required]
         [DisplayName("Tipo Residencial")]
         public string tipoResidencial { get; set; }
-
+        
+        [Required]
         [DisplayName("Nome")]
         public string nome { get; set; }
 
+        [Required]
         [DisplayName("CEP")]
         public string cep { get; set; }
 
+        [Required]
         [DisplayName("Tarifa")]
         public Double tarifa { get; set; }
 
+        [Required]
         [DisplayName("Gasto Mensal")]
         public Double gastoMensal { get; set; }
 
+        [Required]
         [DisplayName("Economia")]
         public Double economia { get; set; }
 

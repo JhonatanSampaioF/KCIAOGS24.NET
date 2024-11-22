@@ -2,6 +2,7 @@
 using KCIAOGS24.NET.Application.Dtos.Create;
 using KCIAOGS24.NET.Application.Dtos.Edits;
 using KCIAOGS24.NET.Application.Interfaces;
+using KCIAOGS24.NET.Domain.Interfaces;
 
 namespace KCIAOGS24.NET.Application.Services
 {
