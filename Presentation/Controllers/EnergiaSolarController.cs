@@ -59,7 +59,7 @@ namespace KCIAOGS24.NET.Presentation.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("id,profissional,local_energiaSolar,horario_energiaSolar,fk_evento")] EnergiaSolarDto model)
+        public async Task<IActionResult> Create([Bind("id,areaPlaca,irradiacaoSolar,energiaEstimadaGerada,fk_endereco")] EnergiaSolarDto model)
         {
             if (ModelState.IsValid)
             {
@@ -95,7 +95,7 @@ namespace KCIAOGS24.NET.Presentation.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("id,profissional,local_energiaSolar,horario_energiaSolar,fk_evento")] EnergiaSolarEditDto energiaSolar)
+        public async Task<IActionResult> Edit(int id, [Bind("id,areaPlaca,irradiacaoSolar,energiaEstimadaGerada,fk_endereco")] EnergiaSolarEditDto energiaSolar)
         {
             if (ModelState.IsValid)
             {

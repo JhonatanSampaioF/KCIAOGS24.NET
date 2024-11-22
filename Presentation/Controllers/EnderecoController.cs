@@ -62,7 +62,7 @@ namespace KCIAOGS24.NET.Presentation.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("id,profissional,local_endereco,horario_endereco,fk_evento")] EnderecoDto model)
+        public async Task<IActionResult> Create([Bind("id,tipoResidencial,nome,cep,tarifa,gastoMensal,economia,fk_usuario")] EnderecoDto model)
         {
             if (ModelState.IsValid)
             {
@@ -101,7 +101,7 @@ namespace KCIAOGS24.NET.Presentation.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("id,profissional,local_endereco,horario_endereco,fk_evento")] EnderecoEditDto endereco)
+        public async Task<IActionResult> Edit(int id, [Bind("id,tipoResidencial,nome,cep,tarifa,gastoMensal,economia,fk_usuario")] EnderecoEditDto endereco)
         {
             if (ModelState.IsValid)
             {

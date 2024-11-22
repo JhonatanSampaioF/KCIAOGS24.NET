@@ -57,7 +57,7 @@ namespace KCIAOGS24.NET.Presentation.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("id,profissional,local_usuario,horario_usuario,fk_evento")] UsuarioDto model)
+        public async Task<IActionResult> Create([Bind("id,nome,email")] UsuarioDto model)
         {
             if (ModelState.IsValid)
             {
@@ -91,7 +91,7 @@ namespace KCIAOGS24.NET.Presentation.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("id,profissional,local_usuario,horario_usuario,fk_evento")] UsuarioEditDto usuario)
+        public async Task<IActionResult> Edit(int id, [Bind("id,nome,email")] UsuarioEditDto usuario)
         {
             if (ModelState.IsValid)
             {
